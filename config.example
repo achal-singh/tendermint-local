@@ -1,0 +1,5 @@
+{
+  "Port": "8080",
+  "SEND_TX_URL": "http://localhost:26657/broadcast_tx_commit?tx=%22{key}={value}%22",
+  "QUERY_KEY_URL": "http://localhost:26657/abci_query?data=%22{key}%22"
+}
