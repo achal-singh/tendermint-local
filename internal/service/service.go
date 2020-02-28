@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
-	"tendermint-client/internal/model"
+	"tendermint-local/internal/model"
 
 	"github.com/tkanos/gonfig"
 )
@@ -76,6 +76,6 @@ func QueryKey(_key string) model.TransactionData {
 	if log == "does not exist" {
 		return model.TransactionData{Error: _key + "Does not exist"}
 	}
-	
+
 	return model.TransactionData{Exists: true, Key: bytes.NewBuffer(key).String(), Value: bytes.NewBuffer(value).String()}
 }

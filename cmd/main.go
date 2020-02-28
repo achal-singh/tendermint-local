@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"tendermint-client/internal/model"
-	"tendermint-client/internal/service"
+	"tendermint-local/internal/model"
+	"tendermint-local/internal/service"
 
 	"github.com/gorilla/mux"
 	"github.com/tkanos/gonfig"
